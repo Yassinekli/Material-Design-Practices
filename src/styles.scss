@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body, html { padding: 0; margin: 0; height: 100%; }
+
+/* 
+    Global Styles
+*/
+.icon{
+    user-select: none;
+}
+
+.cursor-point{
+    cursor: pointer;
+}
+
+/* 
+    Search Input
+*/
+.mat-form-field .mat-form-field-wrapper{
+    padding-bottom: 0 !important;
+}
+
+.mat-form-field-outline *{
+    border-color: white !important; 
+}
+
+.mat-form-field-outline-thick *{
+    border-width: 1.5px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix{
+    padding: unset;
+    border-top: unset;
+}
+
+.mat-form-field-flex{
+    padding: 0 !important;
+}
+
+.mat-form-field-infix{
+    padding: 10px !important;
+}
+
+.mat-form-field-suffix{
+    padding-right: 12px;
+    top: 9px !important;
+    cursor: pointer;
+}
+
+.mat-input-element{
+    vertical-align: middle !important;
+    font-family: Roboto, Helvetica, sans-serif !important;
+}
+
+.mat-input-element::placeholder{
+    color: rgb(223, 223, 223) !important;
+}
+
+/* 
+    List Menu
+*/
+.mat-list-item-content{
+    padding: 0px !important;
+}
+
+/* 
+    Progress Bar
+*/
+.mat-progress-bar-primary::after{
+	background-color: #696969;
+}
+
+.mat-progress-bar-buffer{
+	background-color: #d0d0d0;
+}
