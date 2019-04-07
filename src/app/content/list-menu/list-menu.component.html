@@ -1,16 +1,16 @@
-<mat-list role="list" (click)="menuToggle()">
+<mat-list role="list">
   <mat-list-item role="listitem">
-    <a class="link-icon" routerLink="/">
+    <a class="link-icon" routerLink="/" (click)="menuToggle()">
       <mat-icon class="icon cursor-point">home</mat-icon>
     </a>
   </mat-list-item>
   <mat-list-item role="listitem">
-    <a class="link-icon" routerLink="/account">
+    <a class="link-icon" routerLink="/account" (click)="menuToggle()">
       <mat-icon class="icon cursor-point">account_box</mat-icon>
     </a>
   </mat-list-item>
   <mat-list-item role="listitem">
-    <a class="link-icon" routerLink="/setting">
+    <a class="link-icon" routerLink="/setting" (click)="menuToggle()">
       <mat-icon class="icon cursor-point">settings</mat-icon>
     </a>
   </mat-list-item>

@@ -67,7 +67,8 @@ body, html { padding: 0; margin: 0; height: 100%; }
 /* 
     Progress Bar
 */
-.mat-progress-bar-primary::after{
+.mat-progress-bar-primary::after,
+.mat-progress-bar-secondary::after{
 	background-color: #696969;
 }
 
