@@ -1,12 +1,13 @@
 <app-tool-bar (sidenavToggle)="sidenav.toggle()"></app-tool-bar>
-<mat-progress-bar mode="indeterminate" [style.visibility]="hidden"></mat-progress-bar>
+<mat-progress-bar mode="indeterminate" [style.visibility]="loading ? 'visible' : 'hidden'"></mat-progress-bar>
 <mat-sidenav-container class="side-nav-container">
-  <mat-sidenav #sidenav mode="over">
-    <app-list-menu (sidenavToggle)="sidenav.toggle()"></app-list-menu>
+  <mat-sidenav #sidenav mode="over" opened>
+    <!--  <!-- [style.width]="(sidenavWidth < listnavWidth) ? '50px' : '44px'" -->
+    <div #listnav>
+      <app-list-menu (sidenavToggle)="sidenav.toggle()"></app-list-menu>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div>
-      <router-outlet></router-outlet>
-    </div>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
