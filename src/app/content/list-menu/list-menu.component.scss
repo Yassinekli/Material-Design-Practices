@@ -1,6 +1,6 @@
 .mat-expansion-panel{
     box-shadow: none;
-    border-bottom: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid #c2c2c2;
 }
 
 .mat-expansion-panel-header{
@@ -8,11 +8,25 @@
 }
 
 .link-icon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-size: 25px;
-    padding: 10px;
+    margin: 0px 10px;
     color: #222222;
+    text-decoration: none;
+}
+
+.link-icon label{
+    font-size: 12px;
 }
 
 .link-icon:focus{
     outline: none;
+}
+
+mat-list-item{
+    margin-bottom: 10px;
 }

@@ -6,7 +6,10 @@ import {
 	MatInputModule, 
 	MatIconModule, 
 	MatListModule,
-	MatProgressBarModule
+	MatProgressBarModule,
+	MatCardModule,
+	MatButtonModule,
+	MatGridListModule
 } from '@angular/material';
 
 const modules = [
@@ -16,7 +19,10 @@ const modules = [
 	MatInputModule, 
 	MatIconModule, 
 	MatListModule,
-	MatProgressBarModule
+	MatProgressBarModule,
+	MatCardModule,
+	MatButtonModule,
+	MatGridListModule
 ]
 
 @NgModule({

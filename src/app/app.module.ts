@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from "./materials";
 import 'hammerjs';
-import { ToolBarComponent } from './content/tab-nav/tool-bar.component';
+import { ToolBarComponent } from './content/tool-bar/tool-bar.component';
 import { ListMenuComponent } from './content/list-menu/list-menu.component';
 import { AccountComponent } from './content/account/account.component';
 import { SettingsComponent } from './content/settings/settings.component';
+import { CardsListComponent } from './content/cards/cards-list/cards-list.component';
+import { CardItemComponent } from './content/cards/card-item/card-item.component';
+import { HomeComponent } from './content/home/home.component';
+import { ContactComponent } from './content/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { SettingsComponent } from './content/settings/settings.component';
     ToolBarComponent,
     ListMenuComponent,
     AccountComponent,
-    SettingsComponent
+    SettingsComponent,
+    CardsListComponent,
+    CardItemComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

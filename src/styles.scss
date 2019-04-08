@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./assets/styles/bootstrap-grid-system.min.css";
 
-body, html { padding: 0; margin: 0; height: 100%; }
+body, html { padding: 0; margin: 0; height: 100%; font-family: Roboto, Helvetica, sans-serif !important; }
 
 /* 
     Global Styles
@@ -14,48 +15,94 @@ body, html { padding: 0; margin: 0; height: 100%; }
     cursor: pointer;
 }
 
+.center-items{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* 
     Search Input
 */
-.mat-form-field .mat-form-field-wrapper{
-    padding-bottom: 0 !important;
+.search-input{
+    .mat-form-field-wrapper{
+        padding-bottom: 0 !important;
+    }
+    
+    .mat-form-field-outline *{
+        border-color: white !important; 
+    }
+    
+    .mat-form-field-outline-thick *{
+        border-width: 1.5px !important;
+    }
+    
+    .mat-form-field-infix{
+        padding: unset;
+        border-top: unset;
+    }
+    
+    .mat-form-field-flex{
+        padding: 0 !important;
+    }
+    
+    .mat-form-field-infix{
+        padding: 10px !important;
+    }
+    
+    .mat-form-field-suffix{
+        padding-right: 12px;
+        top: 10px !important;
+        cursor: pointer;
+    }
+    
+    .mat-input-element{
+        vertical-align: middle !important;
+    }
+    
+    .mat-input-element::placeholder{
+        color: rgb(223, 223, 223) !important;
+    }
 }
 
-.mat-form-field-outline *{
-    border-color: white !important; 
+
+
+/* 
+    Contact Inputs Styles
+*/
+.contact-inputs{
+    .mat-form-field-wrapper{
+        padding-bottom: 0 !important;
+        height: 100%;
+    }
+
+    .mat-form-field-flex{
+        height: 100%;
+        padding: .75em !important;
+        border-radius: unset !important;
+    }
+
+    .mat-form-field-infix{
+        height: 100%;
+        padding: unset;
+        border-top: unset;
+    }
+
+    .mat-input-element{
+        height: 100%;
+        font-size: 20px;
+        top: 3px;
+        position: relative;
+        caret-color: #222;
+    }
+
+    .mat-form-field-underline{
+        display: none;
+    }
 }
 
-.mat-form-field-outline-thick *{
-    border-width: 1.5px !important;
-}
 
-.mat-form-field-appearance-outline .mat-form-field-infix{
-    padding: unset;
-    border-top: unset;
-}
-
-.mat-form-field-flex{
-    padding: 0 !important;
-}
-
-.mat-form-field-infix{
-    padding: 10px !important;
-}
-
-.mat-form-field-suffix{
-    padding-right: 12px;
-    top: 9px !important;
-    cursor: pointer;
-}
-
-.mat-input-element{
-    vertical-align: middle !important;
-    font-family: Roboto, Helvetica, sans-serif !important;
-}
-
-.mat-input-element::placeholder{
-    color: rgb(223, 223, 223) !important;
-}
 
 /* 
     List Menu
@@ -63,6 +110,8 @@ body, html { padding: 0; margin: 0; height: 100%; }
 .mat-list-item-content{
     padding: 0px !important;
 }
+
+
 
 /* 
     Progress Bar
@@ -75,6 +124,8 @@ body, html { padding: 0; margin: 0; height: 100%; }
 .mat-progress-bar-buffer{
 	background-color: #d0d0d0;
 }
+
+
 
 /* 
     Scrollbat Styles
