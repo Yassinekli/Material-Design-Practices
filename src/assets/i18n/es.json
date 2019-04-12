@@ -1,0 +1,9 @@
+{
+    "demo": {
+        "greeting": "Bienvenido",
+        "contact": "Contáctenos",
+        "name": "Nombre completo",
+        "email": "Dirección de correo electrónico",
+        "message": "Tu mensaje"
+    }
+}

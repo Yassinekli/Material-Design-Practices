@@ -1,5 +1,9 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
+export interface Language {
+  lang: string;
+}
+
 @Component({
   selector: 'app-tool-bar',
   templateUrl: './tool-bar.component.html',
@@ -7,11 +11,20 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ToolBarComponent implements OnInit {
 
-  @Output() sidenavToggle = new EventEmitter();
+  selectedOption : string;
+  languages: Language[] = [
+    {lang: 'en'},
+    {lang: 'fr'},
+    {lang: 'es'}
+  ];
 
-  constructor() {}
+  @Output() sidenavToggle = new EventEmitter();
+  @Output() languageSelection = new EventEmitter();
+
+  constructor() { this.selectedOption = 'en'; }
   ngOnInit() {}
 
   menuToggle(){ this.sidenavToggle.emit(); }
 
+  changed(event){ this.languageSelection.emit(event.value); }
 }

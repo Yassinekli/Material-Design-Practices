@@ -6,5 +6,12 @@
       <input matInput placeholder="Search">
       <mat-icon matSuffix class="icon cursor-point">search</mat-icon>
     </mat-form-field>
+    <mat-form-field>
+      <mat-select (selectionChange)="changed($event)" [value]="selectedOption">
+        <mat-option *ngFor="let language of languages" [value]="language.lang">
+          {{language.lang}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </mat-toolbar-row>
 </mat-toolbar>

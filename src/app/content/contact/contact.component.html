@@ -1,28 +1,30 @@
-<div class="row">
-  <div class="col-12">
-    <div class="contact-form-container">
-      <h1 class="contact-title">Contact us</h1>
-      <form action="/contact" method="post">
-        <mat-grid-list cols="2" rowHeight="6:1" gutterSize="10px" class="contact-inputs">
-          <mat-grid-tile>
-            <mat-form-field appearance="fill">
-              <input type="text" matInput placeholder="Name">
-            </mat-form-field>
-          </mat-grid-tile>
-          <mat-grid-tile>
-            <mat-form-field appearance="fill">
-              <input type="email" matInput placeholder="Email">
-            </mat-form-field>
-          </mat-grid-tile>
-          <mat-grid-tile colspan="2" rowspan="3">
-            <mat-form-field appearance="fill">
-              <textarea matInput placeholder="Message"></textarea>
-            </mat-form-field>
-          </mat-grid-tile>
-        </mat-grid-list>
-        
-        <button type="submit" mat-flat-button class="btn-submit">Send</button>
-      </form>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="contact-form-container">
+        <h1 class="contact-title">{{"demo.contact" | translate}}</h1>
+        <form method="post">
+          <mat-grid-list cols="2" rowHeight="6:1" gutterSize="10px" class="contact-inputs">
+            <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <input type="text" matInput placeholder="{{'demo.name' | translate}}">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-form-field appearance="fill">
+                <input type="email" matInput placeholder="{{'demo.email' | translate}}">
+              </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="2" rowspan="3">
+              <mat-form-field appearance="fill">
+                <textarea matInput placeholder="{{'demo.message' | translate}}"></textarea>
+              </mat-form-field>
+            </mat-grid-tile>
+          </mat-grid-list>
+          
+          <button type="submit" mat-flat-button class="btn-submit">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>

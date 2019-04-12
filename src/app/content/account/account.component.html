@@ -1,3 +1,35 @@
-<p>
-  account works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <mat-grid-list cols="12" rowHeight="250px" class="mt-10 form-input-container">
+        <mat-grid-tile class="item1" colspan="7">
+          <mat-form-field class="ml-5 width-60-per">
+            <input matInput placeholder="First Name">
+          </mat-form-field>
+          
+          <mat-form-field class="ml-5 width-60-per">
+            <input matInput placeholder="Last Name">
+          </mat-form-field>
+    
+          <mat-form-field class="ml-5">
+            <input matInput placeholder="Enter your email" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+    
+          <mat-radio-group aria-label="Select an option" class="ml-5">
+            <mat-radio-button value="1">Male</mat-radio-button>
+            <mat-radio-button value="2">Female</mat-radio-button>
+          </mat-radio-group>
+        </mat-grid-tile>
+    
+        <mat-grid-tile class="item4" colspan="5">
+          <img src="https://dev.opera.com/authors/zach-leatherman.jpg">
+        </mat-grid-tile>
+        
+        <mat-grid-tile colspan="12">
+          <button mat-raised-button color="primary">Submit</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+</div>

@@ -132,28 +132,98 @@ body, html { padding: 0; margin: 0; height: 100%; font-family: Roboto, Helvetica
 */
 
 /* This works only on Chrome, Opera, Safari */
+
 /* width */
-.mat-drawer-inner-container::-webkit-scrollbar {
-    width: 6px;
+::-webkit-scrollbar {
+    width: 10px;
 }
-  
-  /* Track */
-.mat-drawer-inner-container::-webkit-scrollbar-track {
+
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
 
 /* Handle */
-.mat-drawer-inner-container::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #c0c0c0; 
 }
 
 /* Handle on hover */
-.mat-drawer-inner-container::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #9b9b9b;
+}
+
+.mat-drawer-inner-container{
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
 }
 
 /* This works only on Firefox */
 .mat-drawer-inner-container{
     scrollbar-width: thin;
     scrollbar-color: light;
+}
+
+
+
+
+
+.item2{
+    overflow-y: auto !important;
+}
+
+.item2 .mat-figure{
+    align-items: initial !important;
+    justify-content: initial !important;
+}
+
+.item3{
+    overflow-y: auto !important;
+    height: 100%;
+}
+
+.item3 .mat-figure{
+    align-items: flex-start !important;
+    justify-content: initial !important;
+    position: initial !important;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.expansion{
+    margin: 5px;
+}
+
+
+
+
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.ml-5{
+    margin-left: 5px;
+}
+
+.item1 .mat-figure{
+    height: fit-content !important;
+    flex-wrap: wrap;
+}
+
+.item1 .mat-figure mat-form-field,
+.item1 .mat-figure mat-radio-group
+{
+    flex-grow: 1;
+    width: 100%;
+}
+
+.item4 .mat-figure{
+    justify-content: center !important;
+    flex-wrap: wrap;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Router, NavigationStart, NavigationEnd, NavigationCancel } from "@angular/router";
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,11 @@ export class AppComponent implements OnInit, AfterViewInit {
    // sidenavWidth : String;
    // listnavWidth : String;
 
-   constructor(private router:Router) { this.loading = true; }
+   constructor(private router:Router, private translate: TranslateService) 
+   {
+      this.loading = true;
+      translate.setDefaultLang('en');
+   }
 
    ngOnInit(){
       // this.sidenavWidth = window.getComputedStyle(this.sidenav.nativeElement).height;
@@ -29,4 +34,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       })
    }
 
+   switchLanguage(language: string){
+      this.translate.use(language);
+   }
 }
